@@ -1,6 +1,6 @@
 import { StrictMode, lazy, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 
@@ -9,7 +9,7 @@ const EventList = lazy(() => import('./components/EventList.jsx'))
 const About = lazy(() => import('./components/About.jsx'))
 const SignIn = lazy(()=> import("./components/SignIn.jsx"))
 
-const appRouter = createBrowserRouter([
+const appRouter = createHashRouter([
   {
     path: "/",
     element: <App />,
