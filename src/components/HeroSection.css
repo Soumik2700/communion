@@ -1,0 +1,44 @@
+.welcomeMsg{
+    position: relative;
+    animation: welcomeAnime ease-in-out 700ms;
+}
+
+@keyframes welcomeAnime{
+    0%{
+        bottom: 30px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.description{
+    animation: descriptionAnime ease-in 700ms
+}
+
+@keyframes descriptionAnime{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.exploreBtn{
+    position:relative;
+    animation: explorebBtnAnime ease-in 700ms
+}
+
+@keyframes explorebBtnAnime{
+    0%{
+        top:30px;
+        opacity: 0;
+    }
+    100%{
+        top:0;
+        opacity: 1;
+    }
+}
